@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>[SYR] More Slaves</name>
+    <author>Syrchalis</author>
+    <url>https://ludeon.com/forums/index.php?topic=43449.0</url>
+    <supportedVersions>
+        <li>1.0</li>
+        <li>1.1</li>
+    </supportedVersions>
+    <description>Adds additional slaves to all slave-carrying traders. Below population cap they will offer more slaves. At or above the population cap they will offer fewer slaves, but still some, unlike unmodded Rimworld.</description>
+    <packageId>syrchalis.moreslaves</packageId>
+</ModMetaData>

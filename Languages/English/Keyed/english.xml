@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<MoreSlavesSettingsLabel>More Slaves</MoreSlavesSettingsLabel>
+	<MoreSlavesSettingSlaveCount>Additional slave count</MoreSlavesSettingSlaveCount>
+	<MoreSlavesSettingsSlaveCountTooltip>This is the number of slaves that will be added on top of the normal slaves that traders have</MoreSlavesSettingsSlaveCountTooltip>
+
+</LanguageData>
