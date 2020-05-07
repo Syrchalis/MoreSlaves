@@ -1,4 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_MoreSlaves\1.1\Assemblies\MoreSlaves.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_MoreSlaves\Source\obj\Debug\MoreSlaves.csprojAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_MoreSlaves\Source\obj\Debug\MoreSlaves.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SYR_MoreSlaves\Source\obj\Debug\MoreSlaves.dll

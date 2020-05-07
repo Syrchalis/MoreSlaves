@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModSyncNinjaData>
+  <ID>d32b03ba-96c7-422c-88cf-f69a8228e93d</ID>
+  <ModName>[SYR] More Slaves</ModName>
+  <Version>1.1.0</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Github">
+    <Owner>Syrchalis</Owner>
+    <Project>https://github.com/Syrchalis/MoreSlaves</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncReleases</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>
