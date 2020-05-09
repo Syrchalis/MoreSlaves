@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 	<!-- Gets overwritten by settings in code -->
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraderKindDef[
-		defName="Caravan_Outlander_PirateMerchant" or 
-		defName="Base_Neolithic_Standard" or 
-		defName="Base_Outlander_Standard" or 
-		defName="Caravan_Neolithic_Slaver" or 
-		defName="Orbital_PirateMerchant" or 
-		defName="Caravan_Naga_Blackmarket" or 
-		defName="Base_Naga" or 
-		defName="MedTimes_Caravan_BulkGoods" or 
-		defName="MedTimes_Caravan_Combat" or 
-		defName="ROM_Caravan_CFV_Smuggler" or 
-		defName="Caravan_Crystalloid_PirateMerchant" or 
-		defName="Caravan_Callistan_PirateMerchant" or 
-		defName="Caravan_Orc_Slaver" or 
-		defName="Base_Crystalloid_Standard" or 
-		defName="Base_SecuirityForce"]/stockGenerators</xpath>
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/TraderKindDef/stockGenerators/li[@Class="StockGenerator_Slaves"]</xpath>
+		<order>Append</order>
 		<value>
 			<li Class="Syrchalis_MoreSlaves.StockGenerator_Slaves_IgnorePopCap">
 				<countRange>2~4</countRange>
@@ -26,16 +12,24 @@
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/TraderKindDef[
-		defName="Caravan_Outlander_PirateMerchant" or 
-		defName="Base_Neolithic_Standard" or 
-		defName="Base_Outlander_Standard" or 
-		defName="Caravan_Neolithic_Slaver" or 
-		defName="Orbital_PirateMerchant"]/stockGenerators/li[@Class="StockGenerator_Slaves"]</xpath>
+		<xpath>*/TraderKindDef/stockGenerators/li[@Class="StockGenerator_Slaves"]</xpath>
 		<value>
 			<li Class="StockGenerator_Slaves">
 				<countRange>4~8</countRange>
 			</li>
+		</value>				
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/TraderKindDef[defName = "Caravan_Outlander_PirateMerchant" or defName = "Orbital_PirateMerchant"]/commonalityMultFromPopulationIntent</xpath>
+		<value>
+			<commonalityMultFromPopulationIntent>
+				<points>
+					<li>(0, 0.4)</li>
+					<li>(1,   1)</li>
+					<li>(2,   3)</li>
+				</points>
+			</commonalityMultFromPopulationIntent>
 		</value>				
 	</Operation>
 </Patch>

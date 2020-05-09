@@ -17,23 +17,22 @@ namespace Syrchalis_MoreSlaves
             int num;
             for (int i = 0; i < count; i = num + 1)
             {
-                Faction faction2;
                 if (!(from fac in Find.FactionManager.AllFactionsVisible
                       where fac != Faction.OfPlayer && fac.def.humanlikeFaction
-                      select fac).TryRandomElement(out faction2))
+                      select fac).TryRandomElement(out Faction faction2))
                 {
                     yield break;
                 }
                 PawnGenerationRequest request = PawnGenerationRequest.MakeDefault();
-                request.KindDef = ((this.slaveKindDef != null) ? this.slaveKindDef : PawnKindDefOf.Slave);
+                request.KindDef = slaveKindDef ?? PawnKindDefOf.Slave;
                 request.Faction = faction2;
                 request.Tile = forTile;
-                request.ForceAddFreeWarmLayerIfNeeded = !this.trader.orbital;
-                request.RedressValidator = ((Pawn x) => x.royalty == null || !x.royalty.AllTitlesForReading.Any<RoyalTitle>());
-                yield return PawnGenerator.GeneratePawn(request);
+                request.ForceAddFreeWarmLayerIfNeeded = !trader.orbital;
+                request.RedressValidator = (Pawn x) => x.royalty == null || !x.royalty.AllTitlesForReading.Any<RoyalTitle>();
+                Pawn pawn = PawnGenerator.GeneratePawn(request);
+                yield return pawn;
                 num = i;
             }
-            yield break;
         }
 
         public override bool HandlesThingDef(ThingDef thingDef)
