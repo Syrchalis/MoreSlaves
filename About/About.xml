@@ -6,6 +6,7 @@
     <supportedVersions>
         <li>1.0</li>
         <li>1.1</li>
+        <li>1.2</li>
     </supportedVersions>
     <description>Adds additional slaves to all slave-carrying traders. Below population cap they will offer more slaves. At or above the population cap they will offer fewer slaves, but still some, unlike unmodded Rimworld.</description>
     <packageId>syrchalis.moreslaves</packageId>
